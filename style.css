@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: .5rem 1rem;
+    background: black;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+
+}
