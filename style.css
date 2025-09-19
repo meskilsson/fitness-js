@@ -37,3 +37,7 @@ main {
     grid-template-columns: repeat(3, 200px);
 
 }
+
+.footer-container {
+    display: flex;
+}
