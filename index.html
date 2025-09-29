@@ -15,47 +15,68 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul class="nav-links">
-                <li class="nav-link">Home</li>
-                <li class="nav-link">Exercises</li>
-                <li class="nav-link">About</li>
-                <li class="nav-link">Contact</li>
+            <div class="hamburger">
+                <button type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"
+                    id="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li class="nav-link"><a href="./index.html"><span>Home</span></a></li>
+                <li class="nav-link"><a href="./pages/exercises.html"><span>Exercises</span></a></li>
+                <li class="nav-link"><a href="./pages/about.html"><span>About</span></a></li>
+                <li class="nav-link"><a href="./pages/contact.html"><span>Contact</span></a></li>
+                <li class="nav-link"><a href="./pages/login.html"><span>Login</span></a></li>
+                <li class="nav-link"><a href="./pages/signup.html"><span>Signup</span></a></li>
             </ul>
+
         </nav>
     </header>
     <div class="container">
         <main>
+            <h1>HOME PAGE</h1>
             <section id="exercises">
-                <div class="card-container">
+                <div class="hero-container">
                     <div class="card card-legs"><img src="./images/leg.jpg"></div>
-                    <div class="card card-back"><img src="./images/back.jpg"></div>
-                    <div class="card card-chest"><img src="./images/chest.jpg"></div>
-                    <div class="card card-shoulders"><img src="./images/shoulder.jpg"></div>
-                    <div class="card card-arms"><img src="./images/arms.jpg"></div>
-                    <div class="card card-abs"><img src="./images/abs.jpg"></div>
                 </div>
             </section>
-            <aside id="carousel">
-                <div class="carousel-container">
-                    <div class="box box1">1</div>
-                    <div class="box box2">2</div>
-                    <div class="box box3">3</div>
-                    <div class="box box4">4</div>
-                    <div class="box box5">5</div>
-                    <div class="box box6">6</div>
-                    <div class="box box7">7</div>
-                    <div class="box box8">8</div>
-                    <div class="box box9">9</div>
-                </div>
-            </aside>
-        </main>
-        <footer class="footer">
-            <div class="footer-container"></div>
-            <p>&copy; 2025</p>
-            <p>Mattias Eskilsson</p>
-        </footer>
-        <!-- container -->
+            <section>
+                <div class="hero-container"></div>
+                <div class="card card-back"><img src="./images/back.jpg"></div>
     </div>
+    </section>
+    <section>
+        <div class="hero-container"></div>
+        <div class="card card-chest"><img src="./images/chest.jpg"></div>
+        </div>
+    </section>
+    <section>
+        <div class="hero-container">
+            <div class="card card-shoulders"><img src="./images/shoulder.jpg"></div>
+        </div>
+    </section>
+    <section>
+        <div class="hero-container">
+            <div class="card card-arms"><img src="./images/arms.jpg"></div>
+        </div>
+    </section>
+    <section>
+        <div class="hero-container">
+            <div class="card card-abs"><img src="./images/abs.jpg"></div>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container"></div>
+        <p>&copy; 2025</p>
+        <p>Mattias Eskilsson</p>
+    </footer>
+    <!-- container -->
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
