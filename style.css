@@ -5,10 +5,10 @@
 }
 
 .navbar {
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
-    width: 100%;
     padding: .5rem 1rem;
     background: black;
     color: white;
@@ -17,6 +17,7 @@
 
 .nav-links {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 40px;
     text-decoration: none;
@@ -29,6 +30,9 @@
 .nav-link a:visited {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    border-radius: 4px;
+    transition: background 150ms ease, color 150ms ease;
 }
 
 .nav-link a:hover {
@@ -36,19 +40,42 @@
     color: black;
 }
 
-.nav-links a:hover::after {
-    width: 100%;
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.nav-links a:hover::before {
+.hamburger button span {
+    display: block;
+    height: 3px;
     width: 100%;
+    background: white !important;
+    border-radius: 2px;
 }
+
+.hamburger button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 30px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+
 
 
 body {
     display: flex;
     flex-direction: column;
-    background: #333;
+    background: #111;
     min-height: 100vh;
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -83,4 +110,34 @@ main {
 
 .footer-container {
     display: flex;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #000;
+        z-index: 1000;
+    }
+
+    .nav-links.open {
+        display: flex;
+
+    }
+
+    .nav-link a {
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

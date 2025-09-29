@@ -15,19 +15,29 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul class="nav-links">
+            <div class="hamburger">
+                <button type="button" aria-label="Menu" aria-controls="nav-links" aria-expanded="false"
+                    id="hamburger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
                 <li class="nav-link"><a href="./index.html"><span>Home</span></a></li>
                 <li class="nav-link"><a href="./pages/exercises.html"><span>Exercises</span></a></li>
-                <li class="nav-link"><a href="./pages/about.html"></a><span>About</span></a></li>
-                <li class="nav-link"><a href="./pages/contact.html"></a><span>Contact</span></a></li>
-                <li class="nav-link"><a href="./pages/login.html"></a><span>Login</span></a></li>
-                <li class="nav-link"><a href="./pages/signup.html"></a><span>Signup</span></a></li>
+                <li class="nav-link"><a href="./pages/about.html"><span>About</span></a></li>
+                <li class="nav-link"><a href="./pages/contact.html"><span>Contact</span></a></li>
+                <li class="nav-link"><a href="./pages/login.html"><span>Login</span></a></li>
+                <li class="nav-link"><a href="./pages/signup.html"><span>Signup</span></a></li>
             </ul>
+
         </nav>
     </header>
     <div class="container">
         <main>
-            <h1>EXERCISES PAGE</h1>
+            <h1>HOME PAGE</h1>
             <section id="exercises">
                 <div class="hero-container">
                     <div class="card card-legs"><img src="./images/leg.jpg"></div>
@@ -66,6 +76,7 @@
     </footer>
     <!-- container -->
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
