@@ -5,26 +5,43 @@
 }
 
 .navbar {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    align-items: center;
     padding: .5rem 1rem;
     background: black;
     color: white;
-    text-decoration: none;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    list-style: none;
 }
 
 .nav-links {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     list-style: none;
     gap: 40px;
     text-decoration: none;
     color: white;
+    flex: 1;
 }
-
-
 
 .nav-link a:link,
 .nav-link a:visited {
@@ -38,6 +55,11 @@
 .nav-link a:hover {
     background: white;
     color: black;
+}
+
+.nav-links li:nth-child(3),
+.nav-links li:nth-child(4) {
+    margin-left: auto;
 }
 
 
@@ -165,7 +187,13 @@ main {
 @media (max-width: 768px) {
 
 
-    .nav-links {
+    .nav-center,
+    .nav-right {
+        display: none;
+    }
+
+    .nav-center.open,
+    .nav-right.open {
         display: none;
         position: absolute;
         flex-direction: column;
